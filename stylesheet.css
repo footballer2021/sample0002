@@ -1,0 +1,131 @@
+@charset "UTF-8";
+:root {
+  font-size: 7.32vw;
+}
+
+body {
+  background-image: url("b039.gif");
+}
+
+.header {
+  width: 100%;
+  max-width: 1150px;
+  text-align: center;
+  padding: 5px;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quizbox {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid #039;
+}
+
+.questionbox {
+  padding: 10px;
+  border: 2px solid #039;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 0.2rem;
+  margin: 0 20px;
+}
+
+.buttonframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  height: 120px;
+  margin: 15px auto;
+  border: 0px solid #039;
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border: 2px solid #039;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 4px 4px;
+          box-shadow: 4px 4px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+
+.button span {
+  font-size: 75px;
+}
+
+@media (max-width: 670px) {
+  .button span {
+    font-size: 50px;
+  }
+}
+
+.button:hover {
+  background-color: #b0e0e6;
+}
+
+.button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 6px;
+}
+
+.questionNumber {
+  width: 200px;
+  height: 90px;
+  margin: 20px auto;
+  border: 2px solid #039;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+  .header {
+    font-size: 21px;
+  }
+}
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header {
+    font-size: 11px;
+  }
+  .questionbox {
+    padding: 10px;
+    border: 2px solid #039;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .buttonframe {
+    width: 200px;
+    height: 60px;
+    margin: 15px auto;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */
